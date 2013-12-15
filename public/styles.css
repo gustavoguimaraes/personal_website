@@ -1,0 +1,13 @@
+body {
+  background-color: #1C7AD9;
+  color: #F2F5F7;
+  text-align: center;
+}
+
+a {
+  color: #F2F5F7;
+}
+
+a:visited{
+ color: #79eb7d;
+}
