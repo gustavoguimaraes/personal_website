@@ -7,4 +7,20 @@ class Portifolio < Sinatra::Application
     erb :index
   end
 
+  get '/about' do 
+    erb :about
+  end
+
+  get '/links' do 
+    erb :links
+  end
+
+  get '/projects' do 
+    erb :projects
+  end
+
+  get '/contact' do 
+    erb :contact
+  end
+
 end
