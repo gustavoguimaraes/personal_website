@@ -5,7 +5,9 @@
     <link href="/styles.css" rel="stylesheet" type="text/css"/>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script>
+    //what is commented out is slideup jquery code.
     $(document).ready(function(){
+      // var myTimer;
       $('.myBoxes').click(function(e){
         e.preventDefault();
       });
@@ -14,8 +16,21 @@
         $('.myDivs').hide();
         var which = $(this).data('which');
         $('#'+which).show();
+      //   $('.myDivs').slideUp();
+      //   $('#'+which).delay(500).slideDown();
+      //   clearTimeout(myTimer);
+      // });
+      // $('.myBoxes').mouseout(function(e){
+      //   e.preventDefault();
+      //   myTimer = setTimeout(mySlideUp,10000);
+      // });
+      // function mySlideUp(){
+      //   $('.myDivs').slideUp();
+      // }
+
       });
     });
+
     </script>
   </head>
   <body>
