@@ -5,32 +5,17 @@
     <link href="/styles.css" rel="stylesheet" type="text/css"/>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
-    //what is commented out is slideup jquery code.
     $(document).ready(function(){
-      // var myTimer;
-      $('.myBoxes').click(function(e){
-        e.preventDefault();
+      $('.myBoxes').click(function(event){
+        event.preventDefault();
       });
-      $('.myBoxes').mouseover(function(e){
-        e.preventDefault();
+      $('.myBoxes').mouseover(function(event){
+        event.preventDefault();
         $('.myDivs').hide();
         var which = $(this).data('which');
         $('#'+which).show();
-      //   $('.myDivs').slideUp();
-      //   $('#'+which).delay(500).slideDown();
-      //   clearTimeout(myTimer);
-      // });
-      // $('.myBoxes').mouseout(function(e){
-      //   e.preventDefault();
-      //   myTimer = setTimeout(mySlideUp,10000);
-      // });
-      // function mySlideUp(){
-      //   $('.myDivs').slideUp();
-      // }
-
       });
     });
-
     </script>
   </head>
   <body>
