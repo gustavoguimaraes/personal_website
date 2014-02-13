@@ -3,94 +3,9 @@
   <head>
     <title>GUSTAVO'S PORTIFOLIO</title>
     <link href="/styles.css" rel="stylesheet" type="text/css"/>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-      $('.myBoxes').click(function(event){
-        event.preventDefault();
-      });
-      $('.myBoxes').mouseover(function(event){
-        event.preventDefault();
-        $('.myDivs').hide();
-        var which = $(this).data('which');
-        $('#'+which).show();
-      });
-    });
-    </script>
+    
   </head>
   <body>
-    <div class="hand"> 
-  <img src="/images/dancing_hand.jpg" alt="my pic">
-  <a href="/">
-    <header>
-      <h1>Dance With Gus</h1>
-      <h3>Web Dev Portfolio</h3>
-    </header>
-  </a>
-  
-  <a href="/" class="myBoxes" data-which="about"><div class="about">
-    About
-  </div></a>
-  <a href="/" class="myBoxes" data-which="links"><div class="links">
-    Links
-  </div></a>
-  <a href="/" class="myBoxes" data-which="projects">
-    <div class="projects">
-      Projects
-    </div>
-  </a>
-  <a href="/" class="myBoxes" data-which="contact">
-    <div class="contact">
-      Shall We Dance?
-    </div>
-  </a>
-
-
-  <div id="about" class="content myDivs">
-    <h2>ABOUT</h2>
-      <p>I am a former professional modern dancer (creative stuff) who upon graduating with a political sciences degree in 2010, ended up working for three years in sales operations and financial analysis (not creative).  At some point, I was exposed to programming and my creativity started to boom again. The natural consequence was to leave my job and become a web developer.<br></br> I look forward to working with you on an exciting project. <br></br>Shall we dance?</p>
-  </div>
-
-  <div id="links" class="content myDivs">
-    <h2>LINKS</h2>
-      <p><a href="http://gustavocguimaraes.wordpress.com/" target="blank">Check out my Blog</a></p>
-      <p><a href="https://github.com/gustavoguimaraes/" target="blank">Peruse my Github</a></p>
-      <p> <a href="http://www.linkedin.com/in/gustavocguimaraes" target="blank">Read my LinkedIn page</a>
-      </p>
-  </div>
-
-  <div id="projects" class="content-projects myDivs">
-    <h2>Projects</h2>
-      <p><a href="https://rock-paper-scissors-s.herokuapp.com/" target="blank">Rock, Paper, and Scissors<a/>
-      <br>My very first app</p>
-
-      <p><a href="https://er-compliments.herokuapp.com/" target="blank">Emergency Compliment Application<a/>
-      <br>Simple application using Sinatra</p>
-
-      <p><a href="https://sinatra-project-playlister.herokuapp.com/" target="blank">Playlister<a/>
-      <br>An exercise on parsing data</p>
-
-      <p><a href="https://isittodayapp.herokuapp.com/" target="blank">Birthday Countdown Application<a/>
-      <br>Countdown to some of my friend's and relatives' birthdays</p>
-
-      <p><a href="https://piglatintranslator.herokuapp.com/" target="blank">Pig Latin Translator<a/>
-      <br>English to Pig Latin translator.</p>
-
-      <p><a href="https://gamesbygus.herokuapp.com" target="blank">Card Games<a/>
-      <br>Jeorpardy and Memory Card Games.</p>
-
-      <br></br>
-        <h3>More to come!</h3>
-  </div>
-
-  <div id="contact" class="content myDivs">
-    <h2>Contact</h2>
-      <h5>Simply pick a dance of your choice, put your best dance pants and let's groove:</h5>
-      <p><img src="/images/dancing-people.png" style="max-width:10px; max-height:10px; padding-top:200px;"><a href="mailto:gustavoguimaraes@gmail.com" target="blank">Tango</a></p> 
-      <p><a href="mailto:gustavoguimaraes@gmail.com" target="blank">Swing Dance</a></p>
-      <p><a href="mailto:gustavoguimaraes@gmail.com" target="blank">Any</a>
-      </p>
-  </div>
-
+    <%=yield%>
   </body>
 </html>

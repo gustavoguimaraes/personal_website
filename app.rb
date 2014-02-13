@@ -4,6 +4,10 @@ Bundler.require
 class Portifolio < Sinatra::Application
   
   get '/' do
-    erb :layout
+    erb :index
+  end
+
+  get '/projects' do
+    erb :projects
   end
 end
