@@ -20,8 +20,12 @@
   min-height: 50%;
 }*/
 
+body {
+  background-color: #008B8B;
+}
+
 .hand { 
-  background: url(images/hand2.jpg) no-repeat right 86% fixed; 
+  background: url("/images/hand2.jpg") no-repeat right 86% fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
