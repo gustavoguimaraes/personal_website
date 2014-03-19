@@ -9,20 +9,7 @@
   width: 200%; 
   height: 200%;
 }
-/*.hand img {
-  position: absolute; 
-  top: 6%; 
-  left: 0; 
-  right: 10%; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
-}*/
 
-body {
-  background-color: #008B8B;
-}
 
 .hand { 
   background: url(/images/hand_dance.jpg) no-repeat right 86% fixed; 
